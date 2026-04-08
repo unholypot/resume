@@ -128,7 +128,7 @@
       {Bachelor of Engineering (Honours), Computer and Software Systems}{Brisbane, QLD}
       \resumeItemListStart
         \resumeItem{Minoring in Advanced Electrical Engineering and Robotics \& Embedded Systems}
-        \resumeItem{Dean's List, Semester 1}
+        \resumeItem{Dean's List}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -162,14 +162,6 @@
         \resumeItem{Prepared shipments for safe transportation by securely wrapping parcels and labeling packages according to company and shipping guidelines}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Indian School Al Ghubra}{Oct. 2019 -- Nov. 2019}
-      {Volunteer}{Muscat, Oman}
-      \resumeItemListStart
-        \resumeItem{Led group discussions and activities to meet different community needs, and tracked service outcomes against outlined plans and goals}
-        \resumeItem{Provided IT support by setting up and maintaining computers and other necessary technology for special events and programs}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -177,22 +169,21 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Portfolio Website} $|$ \emph{React, Vite, CSS, Framer Motion}}{2025 -- Present}
+          {\textbf{Portfolio Website} $|$ \emph{React 19, Vite, Framer Motion, Custom CSS}}{Oct. 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Built a fully custom personal portfolio site (\href{https://allensaji.com}{\myuline{allensaji.com}}) with a cohesive retro-inspired design system, dark/light mode, and smooth scroll-based animations}
-            \resumeItem{Designed and developed the entire application independently, including component architecture, responsive layout, and deployment}
-            \resumeItem{Implemented reusable CSS design tokens for consistent theming across light and dark modes, with support for reduced-motion accessibility}
-            \resumeItem{Developed semantic, accessible HTML with keyboard navigation and responsive layouts optimised for mobile through widescreen}
+            \resumeItem{Designed and built \href{https://allensaji.com}{\myuline{allensaji.com}} end-to-end with no UI framework, developing a custom CSS design-token system that powers synchronized light and dark themes with no flash on page load}
+            \resumeItem{Engineered an interactive project timeline component with distinct desktop and mobile interaction models, click-to-expand detail panels with hover previews on desktop, independent tap-to-toggle cards on mobile that adapt seamlessly as the viewport changes}
+            \resumeItem{Built a shared animation system on top of Framer Motion to drive scroll reveals, staggered transitions, and panel animations consistently across the site, with full support for users who prefer reduced motion}
+            \resumeItem{Developed the entire site to be fully keyboard-navigable and accessible, with responsive layouts tested from mobile through widescreen; deployed on Vercel}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Cloud-Based Background Removal System} $|$ \emph{AWS, Node.js, Docker, ECS Fargate}}{Aug. 2025 -- Nov. 2025}
+          {\textbf{Cloud-Based Background Removal System} $|$ \emph{AWS, Node.js, Docker}}{Aug. 2025 -- Nov. 2025}
           \resumeItemListStart
-            \resumeItem{Designed and deployed a scalable microservices platform on AWS using ECS Fargate}
-            \resumeItem{Built asynchronous processing pipeline with SQS and worker services for image processing}
-            \resumeItem{Integrated secure authentication with AWS Cognito and backend with PostgreSQL (RDS)}
-            \resumeItem{Implemented S3 storage with pre-signed URLs and load balancing via ALB (HTTPS)}
-            \resumeItem{Applied auto-scaling and CDN (CloudFront, Route 53) for performance and scalability}
+            \resumeItem{Designed and deployed a cloud-native background removal platform on AWS as two independent containerised services a stateless API tier and an ML processing tier, orchestrated with ECS Fargate for serverless compute and auto-scaling}
+            \resumeItem{Architected an asynchronous SQS pipeline to decouple user requests from ML inference, with retry logic and a Dead Letter Queue to automatically isolate failing jobs after three attempts}
+            \resumeItem{Integrated a neural network-based background removal model into the processor service, with processed images stored in S3 and job status tracked through PostgreSQL on RDS}
+            \resumeItem{Secured the platform with AWS Cognito authentication and S3 pre-signed URLs so image data bypassed the API servers entirely, keeping the compute tier stateless and horizontally scalable; deployed behind an ALB with HTTPS and a custom domain}
           \resumeItemListEnd
 
       \resumeProjectHeading
