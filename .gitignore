@@ -1,0 +1,32 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
+# Generated PDF (uncomment if you don't want to track output)
+# *.pdf
+
+# Latexmk / temp dirs
+_latexmk/
+latex.out/
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db
