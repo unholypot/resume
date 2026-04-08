@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% colors
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% sans serif font
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Allen Saji} \\ \vspace{5pt}
+    \small \faMapMarker* \hspace{2pt} \texttt{Brisbane, QLD} \hspace{1pt} $|$
+    \hspace{1pt} \faPhone* \hspace{2pt} \texttt{0421 437 800} \hspace{1pt} $|$
+    \hspace{1pt} \faGlobe \hspace{2pt} \href{https://allensaji.com}{\texttt{allensaji.com}} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{allensaji012@gmail.com}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queensland University of Technology}{Expected Feb. 2027}
+      {Bachelor of Engineering (Honours), Computer and Software Systems}{Brisbane, QLD}
+      \resumeItemListStart
+        \resumeItem{Minoring in Advanced Electrical Engineering and Robotics \& Embedded Systems}
+        \resumeItem{\textbf{Dean's List}, Semester 1}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indian School Al Ghubra}{Jun. 2022}
+      {High School Diploma -- 7.0 GPA}{Muscat, Oman}
+      \resumeItemListStart
+        \resumeItem{\textbf{Executive}, Robotics Club (2018 -- 2020)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Coles}{May 2024 -- Present}
+      {Team Member (Service and Online)}{Brisbane, QLD}
+      \resumeItemListStart
+        \resumeItem{Enhanced customer satisfaction by promptly addressing inquiries and providing accurate information}
+        \resumeItem{Operated POS systems to process transactions quickly and accurately, ensuring smooth checkout experiences}
+        \resumeItem{\textbf{Trained and onboarded new team members}, delivering clear guidance on procedures and safety standards to improve team efficiency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Wildfire Sports \& Trek}{Oct. 2023 -- Feb. 2024}
+      {Warehouse Dispatcher}{Brisbane, QLD}
+      \resumeItemListStart
+        \resumeItem{\textbf{Reduced order processing times} with streamlined picking, packing, and shipping procedures}
+        \resumeItem{Participated in continuous improvement initiatives to streamline workflows and optimize productivity}
+        \resumeItem{Prepared shipments for safe transportation by securely wrapping parcels and labeling packages according to company and shipping guidelines}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indian School Al Ghubra}{Oct. 2019 -- Nov. 2019}
+      {Volunteer}{Muscat, Oman}
+      \resumeItemListStart
+        \resumeItem{Led group discussions and activities to meet different community needs, and tracked service outcomes against outlined plans and goals}
+        \resumeItem{Provided \textbf{IT support} by setting up and maintaining computers and other necessary technology for special events and programs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Portfolio Website} $|$ \emph{React, Vite, CSS, Framer Motion}}{2024}
+          \resumeItemListStart
+            \resumeItem{Designed and built a fully custom personal portfolio site from scratch at \href{https://allensaji.com}{\myuline{allensaji.com}} featuring a warm retro design system, dark/light mode, and Framer Motion scroll animations --- all \textbf{without a UI framework}}
+            \resumeItem{Sole designer and developer --- responsible for the design system, responsive layout, component architecture, and deployment}
+            \resumeItem{Built custom CSS design tokens for consistent theming across light and dark modes, and scroll-triggered animations with \textbf{reduced-motion support}}
+            \resumeItem{Delivered semantic, accessible HTML with keyboard-navigable navigation, fully responsive from mobile to widescreen}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Solar Inverter Reverse Engineering} $|$ \emph{LTspice, MATLAB}}{Feb. 2025 -- Jun. 2025}
+          \resumeItemListStart
+            \resumeItem{Worked in a team to \textbf{reverse-engineer} the internal architecture of a grid-connected Solar PV inverter}
+            \resumeItem{Analyzed and simulated the \textbf{MPPT DC-DC boost converter} using LTspice and MATLAB; evaluated efficiency and ripple performance}
+            \resumeItem{Investigated the DC-AC single-phase full-bridge inverter, exploring switching strategies, harmonics, and control techniques}
+            \resumeItem{Delivered a comprehensive report evaluating converter topologies for power factor correction, efficiency, and EMI compliance}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Elevator System Simulation} $|$ \emph{C, POSIX, TCP/IP}}{Aug. 2024 -- Oct. 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a multi-component elevator system in \textbf{C for Linux} using POSIX shared memory, multithreading, and TCP/IP sockets}
+            \resumeItem{Built modules for car control, scheduling, safety, and user interaction with emphasis on inter-process communication and real-time responsiveness}
+            \resumeItem{Followed \textbf{safety-critical standards (MISRA C)} and developed a floor scheduling algorithm integrated via a custom build system}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Text-Based Mission Planner} $|$ \emph{C\#, .NET 6.0}}{Aug. 2023 -- Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a C\# text-based application simulating an agent planning a mission with a menu-driven interface for defining obstacles and objectives}
+            \resumeItem{Implemented \textbf{pathfinding algorithms} to determine the shortest and safest route through a grid-based map}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Bridge Design and Build Project} $|$ \emph{Team of 5}}{Feb. 2023 -- Jun. 2023}
+          \resumeItemListStart
+            \resumeItem{Designed, prototyped, and constructed a model bridge structure; conducted stakeholder analysis to define user needs and generate a detailed design specification}
+            \resumeItem{Calibrated and integrated \textbf{electric motors} into the bridge system for automated lifting functionality, contributing to wiring layout and voltage control}
+            \resumeItem{Assisted in laser-cutting and mechanical fabrication, and \textbf{led stress testing} of the final structure}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Python, C, C\#, JavaScript, HTML/CSS} \vspace{2pt} \\
+     \textbf{Frameworks \& Tools} {: React, Vite, Framer Motion, .NET, LTspice, MATLAB, Git} \vspace{2pt} \\
+     \textbf{Electrical} {: DC-DC converters, inverter design, switch-mode power supplies, PCB layout, oscilloscope/multimeter, circuit debugging} \vspace{2pt} \\
+     \textbf{Concepts} {: Data structures \& algorithms, multithreading, inter-process communication, real-time systems, MISRA C} \vspace{2pt} \\
+     \textbf{Languages (Spoken)} {: English (Native), Malayalam (Native), Hindi (Elementary)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
