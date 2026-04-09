@@ -174,7 +174,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Portfolio Website} $|$ \emph{React 19, Vite, Framer Motion, Custom CSS}}{Dec. 2025 -- Present}
+          {\textbf{Portfolio Website} $|$ \emph{React 19, Vite, Framer Motion, CSS}}{Dec. 2025 -- Present}
           \resumeItemListStart
             \resumeItem{Designed and built \href{https://allensaji.com}{\myuline{allensaji.com}} end-to-end with no UI framework, developing a custom CSS design-token system that powers synchronized light and dark themes with no flash on page load}
             \resumeItem{Engineered an interactive project timeline component with distinct desktop and mobile interaction models, click-to-expand detail panels with hover previews on desktop, independent tap-to-toggle cards on mobile that adapt seamlessly as the viewport changes}
@@ -194,10 +194,10 @@
       \resumeProjectHeading
           {\textbf{Solar Inverter Reverse Engineering} $|$ \emph{LTspice, MATLAB}}{Feb. 2025 -- Jun. 2025}
           \resumeItemListStart
-            \resumeItem{Worked in a team to reverse-engineer the internal architecture of a grid-connected Solar PV inverter}
-            \resumeItem{Analyzed and simulated the MPPT DC-DC boost converter using LTspice and MATLAB; evaluated efficiency and ripple performance}
-            \resumeItem{Investigated the DC-AC single-phase full-bridge inverter, exploring switching strategies, harmonics, and control techniques}
-            \resumeItem{Delivered a comprehensive report evaluating converter topologies for power factor correction, efficiency, and EMI compliance}
+            \resumeItem{Reverse-engineered a commercial 5 kW grid-tied PV inverter with a partner, reconstructing both the DC-DC boost stage and single-phase full-bridge DC-AC stage from physical measurements and datasheet specifications}
+            \resumeItem{Modelled the boost converter in LTspice and MATLAB, validating theoretical ripple and duty cycle calculations against simulation and estimating stage efficiency after accounting for inductor, switching, and capacitor losses}
+            \resumeItem{Designed the full-bridge inverter stage using sinusoidal pulse-width modulation to push switching noise above the audible range, selecting a suitably rated IGBT and sizing the output filter to meet grid voltage and waveform quality requirements}
+            \resumeItem{Proposed a snubber circuit to significantly reduce switching losses in the boost MOSFET, and identified synchronous rectification as a further efficiency improvement path}
           \resumeItemListEnd
 
       \resumeProjectHeading
