@@ -122,7 +122,7 @@
 
 %-----------SUMMARY-----------
 \section{SUMMARY}
-\small{Final-year engineering student at QUT with a hybrid software and electrical background. Project experience spans AWS cloud architecture, React frontend development, embedded C systems, power electronics, and computer vision. Open to graduate software or electrical engineering roles.}
+\small{Final-year engineering student at QUT with a hybrid software and electrical background. Project experience spans AWS cloud architecture, React frontend development, embedded C systems, power electronics, and computer vision research. Open to graduate software or electrical engineering roles.}
 \vspace{-4pt}
 
 %-----------EDUCATION-----------
@@ -183,12 +183,12 @@
           \resumeItemListEnd\vspace{+25pt}
 
       \resumeProjectHeading
-          {\textbf{Honours Research: Bubble Analysis in Water Electrolysers} $|$ \emph{Python, OpenCV, CVAT, Detectron2}}{Feb. 2026 -- Present}
+          {\textbf{Honours Research: Bubble Analysis in Water Electrolysers} $|$ \emph{Python, PyTorch, Detectron2}}{Feb. 2026 -- Oct. 2026}
           \resumeItemListStart
-            \resumeItem{Developing a computer vision pipeline to analyse high-speed water electrolyser imagery, focusing on small, overlapping, and densely packed bubbles}
-            \resumeItem{Prepared segmentation datasets by extracting frames and annotating bubble boundaries with CVAT polygon masks for machine learning workflows}
-            \resumeItem{Investigated YOLO-based detection, U-Net-style segmentation, Mask R-CNN via Detectron2, and StarDist to compare suitability for bubble instance segmentation}
-            \resumeItem{Defined the planned evaluation workflow using IoU, mAP, precision, and recall to benchmark model outputs against annotated ground truth masks}
+            \resumeItem{Built a reproducible instance segmentation pipeline for 2,000 fps electrolyser video, auditing three annotators' CVAT exports into a verified dataset of 37,388 bubble labels, split by sequence to prevent data leakage}
+            \resumeItem{Fine-tuned Mask R-CNN in Detectron2 at three input scales and compared it with StarDist and a hybrid using one-shot held-out testing, raising mask AP from 40.4 to 45.1 ($\pm$0.2 over three seeds) with an F1 of 0.80}
+            \resumeItem{Detected 94--100\% of bubbles above 25 px, including overlapping ones, and measured gas coverage and Sauter mean diameter to within about 3\%; counts ran about 20\% low because missed bubbles are numerous but tiny}
+            \resumeItem{Quantified inter-annotator agreement and showed the small-bubble limit below about 15 px lines up with where human labellers stop agreeing, making a consistent labelling rule the top recommendation}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -230,7 +230,7 @@
     \textbf{Engineering \& Simulation} {: MATLAB/Simulink, LTspice, KiCad/Eagle, AutoCAD} \vspace{2pt} \\
     \textbf{Electrical \& Power Systems} {: DC-DC converters, PV inverter modelling, PCB design \& layout, circuit debugging} \vspace{2pt} \\
     \textbf{Embedded Systems} {: Microcontroller programming (C), real-time systems, UART/SPI/I2C, hardware debugging} \vspace{2pt} \\
-    \textbf{Machine Learning \& Computer Vision} {: TensorFlow/Keras, image processing, segmentation, neural network integration} \vspace{2pt} \\
+    \textbf{Machine Learning \& Computer Vision} {: PyTorch, Detectron2, OpenCV, TensorFlow/Keras, image processing, instance segmentation, neural network integration} \vspace{2pt} \\
     \textbf{Languages} {: English (Native), Malayalam (Native)}
     }}
  \end{itemize}
