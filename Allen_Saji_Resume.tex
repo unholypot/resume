@@ -122,7 +122,7 @@
 
 %-----------SUMMARY-----------
 \section{SUMMARY}
-\small{Final-year engineering student at QUT with a hybrid software and electrical background. Project experience spans AWS cloud architecture, React frontend development, embedded C systems, power electronics, and computer vision research. Open to internships and graduate roles in software or electrical engineering.}
+\small{Final-year engineering student at QUT with a hybrid software and electrical background. Project experience spans AWS cloud architecture, React frontend development, embedded IoT systems, power electronics, computer vision research, and leading a five-person drone payload team as project manager. Open to internships and graduate roles in software or electrical engineering.}
 \vspace{-4pt}
 
 %-----------EDUCATION-----------
@@ -158,6 +158,15 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
+          {\textbf{UAV Air Quality and Target Detection Payload} $|$ \emph{Raspberry Pi 5, Python, MQTT, I2C/SPI}}{Jul. 2026 -- Oct. 2026}
+          \resumeItemListStart
+            \resumeItem{Project manager and air quality lead for a five-person team building a 364 g drone payload that monitors air quality, reads pressure gauges and drills soil samples}
+            \resumeItem{Led systems engineering across four subsystems, defining the interfaces and communication standards between them and verifying the integrated payload against the customer's requirements}
+            \resumeItem{Wrote the embedded Python sensor software on a Raspberry Pi 5, sampling temperature, humidity, pressure, light and gas over I2C and correcting temperature for CPU heat}
+            \resumeItem{Streamed telemetry over MQTT to the ground station dashboard, and built an SPI LCD controller showing live sensor data and detection images, switched remotely from the dashboard}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
           {\textbf{Cloud-Based Background Removal System} $|$ \emph{AWS, Node.js, Docker}}{Aug. 2025 -- Nov. 2025}
           \resumeItemListStart
             \resumeItem{Designed and deployed a cloud-native background removal platform on AWS as two independent containerised services: a stateless API tier and an ML processing tier, orchestrated with ECS Fargate for serverless compute and auto-scaling}
@@ -182,14 +191,6 @@
             \resumeItem{Modelled the boost converter in LTspice and MATLAB, validating theoretical ripple and duty cycle calculations against simulation and estimating stage efficiency after accounting for inductor, switching, and capacitor losses}
             \resumeItem{Designed the full-bridge inverter stage using sinusoidal pulse-width modulation to push switching noise above the audible range, selecting a suitably rated IGBT and sizing the output filter to meet grid voltage and waveform quality requirements}
             \resumeItem{Proposed a snubber circuit to significantly reduce switching losses in the boost MOSFET, and identified synchronous rectification as a further efficiency improvement path}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Elevator System Simulation} $|$ \emph{C, POSIX, TCP/IP}}{Aug. 2024 -- Oct. 2024}
-          \resumeItemListStart
-            \resumeItem{Designed and implemented a multi-component elevator system in C for Linux using POSIX shared memory, multithreading, and TCP/IP sockets}
-            \resumeItem{Built modules for car control, scheduling, safety, and user interaction with emphasis on inter-process communication and real-time responsiveness}
-            \resumeItem{Followed safety-critical standards (MISRA C) and developed a floor scheduling algorithm integrated via a custom build system}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -229,7 +230,7 @@
     \textbf{Databases} {: PostgreSQL, REST APIs} \vspace{2pt} \\
     \textbf{Engineering \& Simulation} {: MATLAB/Simulink, LTspice, KiCad/Eagle, AutoCAD} \vspace{2pt} \\
     \textbf{Electrical \& Power Systems} {: DC-DC converters, PV inverter modelling, PCB design \& layout, circuit debugging} \vspace{2pt} \\
-    \textbf{Embedded Systems} {: Microcontroller programming (C), real-time systems, UART/SPI/I2C, hardware debugging} \vspace{2pt} \\
+    \textbf{Embedded Systems} {: Raspberry Pi, microcontroller programming (C), MQTT, UART/SPI/I2C, sensor integration, hardware debugging} \vspace{2pt} \\
     \textbf{Machine Learning \& Computer Vision} {: PyTorch, Detectron2, OpenCV, TensorFlow/Keras, image processing, instance segmentation, neural network integration} \vspace{2pt} \\
     \textbf{Languages} {: English (Native), Malayalam (Native)}
     }}
